@@ -1,0 +1,23 @@
+{
+	"name": "lib2",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "rslib build"
+	},
+	"devDependencies": {
+		"lib1": "workspace:*",
+		"@repo/typescript-config": "workspace:*"
+	},
+	"exports": {
+		".": {
+			"types": "./libs/index.d.ts",
+			"import": "./libs/index.js"
+		},
+		"./number": {
+			"types": "./libs/number.d.ts",
+			"import": "./libs/number.js"
+		}
+	}
+}

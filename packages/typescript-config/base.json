@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"declaration": true,
+		"isolatedModules": true,
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
+		"skipLibCheck": true,
+		"strict": true,
+		"isolatedDeclarations": true,
+		"erasableSyntaxOnly": true
+	},
+	"include": ["${configDir}/src"]
+}
